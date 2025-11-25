@@ -7,11 +7,11 @@ Instructor: Dr. Nourhan Hamdi
 Teaching Assistants: Mr. Nour Gaser, Mr. Omar Alaa
 1. Team Members:
 Name Student       ID GitHub    Username
-[Ahmed Sherif]    [13001195] [@ahmedsmounir]
-[Ali Tamer]       [13003448] [@alitamerr21]
-[Mohamed ABoBakr] [13003837] [@Mohamed1elshemaly]
-[Mohamed Mostafa] [13004527] [@mohamed1232006]
-[Mazen Maged]     [13005396] [@mazennmagedd]
+[Ahmed Sherif]    [13001195] [@ahmedsmounir]/
+[Ali Tamer]       [13003448] [@alitamerr21]/
+[Mohamed ABoBakr] [13003837] [@Mohamed1elshemaly]/
+[Mohamed Mostafa] [13004527] [@mohamed1232006]/
+[Mazen Maged]     [13005396] [@mazennmagedd]/
 
 3. Project Description:
 Concept: PocketWise is a digital banking interface designed for university students
