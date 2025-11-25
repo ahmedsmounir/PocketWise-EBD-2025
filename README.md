@@ -1,4 +1,4 @@
-# PocketWise-EBD-2025
+# PocketWise
 
 Pocket Wise
 Course: Electronic Business Development (BINF 503)
