@@ -1,0 +1,116 @@
+/* 1. IMPORT GOOGLE FONT (Inter - very standard for modern apps) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Color Palette - "Fintech Blue" */
+  --primary: #2563eb;       /* Bright Blue */
+  --primary-dark: #1e40af;  /* Darker Blue (for hover) */
+  --secondary: #10b981;     /* Success Green */
+  --danger: #ef4444;        /* Error Red */
+  --bg-main: #f3f4f6;       /* Light Gray Background (Not harsh white) */
+  --bg-card: #ffffff;       /* White Cards */
+  --text-main: #1f2937;     /* Dark Gray Text (Easier on eyes than black) */
+  --text-muted: #6b7280;    /* Light Gray Text */
+  
+  /* Shadows & Radius */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --radius: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* --- UTILITY CLASSES (Use these in your JSX!) --- */
+
+/* 1. Cards */
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* 2. Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+  text-decoration: none;
+  font-size: 14px;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+.btn-success {
+  background-color: var(--secondary);
+  color: white;
+}
+.btn-danger {
+  background-color: var(--danger);
+  color: white;
+}
+
+/* 3. Inputs */
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  box-sizing: border-box; /* Important for spacing */
+}
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* 4. Layouts */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- Navbar Logo Styles (BIG SIZE) --- */
+.navbar-logo-container {
+  width: 120px;  /* THIS IS THE FIX (Was 70px) */
+  height: 112px; /* THIS IS THE FIX (Was 70px) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
